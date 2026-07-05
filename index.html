@@ -12,7 +12,7 @@
 <link rel="icon" type="image/jpeg" href="logo-nav.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Lexend+Exa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;0,700;0,800;0,900;1,700;1,800;1,900&family=Lexend+Exa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 /* ============================================================
    GENESIS NEXA — Rediseño radical: luz, vida y tech premium
@@ -34,8 +34,8 @@
   --amber: #ffb15c;
   --grad: linear-gradient(135deg,#00c2e8 0%,#3b82f6 52%,#8b5cf6 100%);
   --wa: #25d366;
-  --font-head: 'Baloo 2', sans-serif;      /* Rounded Modern: hero, subtítulos, importante */
-  --font-display: 'Baloo 2', sans-serif;
+  --font-head: 'Nunito', sans-serif;       /* Rounded Modern (bold itálica): hero, subtítulos, importante */
+  --font-display: 'Nunito', sans-serif;
   --font-body: 'Lexend Exa', sans-serif;   /* Wide Bold: textos restantes */
   --radius: 20px;
   --transition: all .35s cubic-bezier(.25,.46,.45,.94);
@@ -93,7 +93,7 @@ section{padding:112px 0;position:relative}
   margin-bottom:18px;
 }
 .eyebrow::before{content:'';width:30px;height:3px;border-radius:3px;background:var(--grad)}
-h1,h2,h3{font-family:var(--font-head);font-weight:700;line-height:1.14;letter-spacing:-.02em;color:var(--ink)}
+h1,h2,h3{font-family:var(--font-head);font-style:italic;font-weight:800;line-height:1.14;letter-spacing:-.01em;color:var(--ink)}
 h1{font-size:clamp(2.4rem,5.2vw,3.9rem);font-weight:800}
 h2{font-size:clamp(1.9rem,4.2vw,2.8rem);font-weight:800;margin-bottom:18px}
 h3{font-size:1.18rem;font-weight:700}
@@ -108,7 +108,7 @@ h3{font-size:1.18rem;font-weight:700}
 /* ---------- Botones ---------- */
 .btn{
   display:inline-flex;align-items:center;gap:10px;
-  font-family:var(--font-head);font-weight:600;font-size:15px;
+  font-family:var(--font-head);font-style:italic;font-weight:800;font-size:15px;
   padding:16px 32px;border-radius:100px;
   transition:var(--transition);white-space:nowrap;
 }
@@ -677,6 +677,58 @@ footer{border-top:1px solid var(--line);padding:56px 0 36px;background:rgba(237,
 }
 .chatbot-send:hover{transform:scale(1.08)}
 .chatbot-send svg{width:18px;height:18px;fill:#fff}
+
+/* ---------- VIDA: tipografía importante en itálica redondeada ---------- */
+.stat-value,.price-row .price,.hero-trust strong,.card-link,.mock-chip,.p-chip,
+.site-card-bar strong,.site-card-bar .arrow,.logo,.feature strong,.value strong,
+.agent-info strong,.mock-head strong,.chatbot-header strong,.panel-kpi strong{font-style:italic}
+
+/* ---------- VIDA: tarjetas con color (nada de blanco plano) ---------- */
+.card,.feature,.stat,.value,.contact-card{position:relative;border-width:1.5px}
+.card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:5px;
+  border-radius:var(--radius) var(--radius) 0 0;background:var(--grad);
+}
+.grid-3 .card:nth-child(1){background:linear-gradient(165deg,#dff7ff 0%,#eef9ff 45%,#ffffff 100%);border-color:rgba(0,194,232,.45);box-shadow:0 14px 36px rgba(0,194,232,.18)}
+.grid-3 .card:nth-child(2){background:linear-gradient(165deg,#efe7ff 0%,#f5f1ff 45%,#ffffff 100%);border-color:rgba(139,92,246,.45);box-shadow:0 14px 36px rgba(139,92,246,.18)}
+.grid-3 .card:nth-child(3){background:linear-gradient(165deg,#e3efff 0%,#eef6ff 45%,#ffffff 100%);border-color:rgba(59,130,246,.45);box-shadow:0 14px 36px rgba(59,130,246,.18)}
+.grid-3 .card:nth-child(1)::before{background:linear-gradient(90deg,#00c2e8,#3b82f6)}
+.grid-3 .card:nth-child(2)::before{background:linear-gradient(90deg,#8b5cf6,#c026d3)}
+.grid-3 .card:nth-child(3)::before{background:linear-gradient(90deg,#3b82f6,#00c2e8)}
+.feature:nth-child(3n+1){background:linear-gradient(135deg,#e9faff,#ffffff 72%);border-color:rgba(0,194,232,.4)}
+.feature:nth-child(3n+2){background:linear-gradient(135deg,#f1eaff,#ffffff 72%);border-color:rgba(139,92,246,.4)}
+.feature:nth-child(3n){background:linear-gradient(135deg,#e7f0ff,#ffffff 72%);border-color:rgba(59,130,246,.4)}
+.feature:nth-child(3n+2) .feature-check{background:linear-gradient(135deg,#8b5cf6,#3b82f6);box-shadow:0 5px 12px rgba(139,92,246,.35)}
+.feature:nth-child(3n) .feature-check{background:linear-gradient(135deg,#3b82f6,#00c2e8);box-shadow:0 5px 12px rgba(59,130,246,.35)}
+.stat:nth-child(1){background:linear-gradient(165deg,#defaff,#ffffff 78%);border-color:rgba(0,194,232,.45);box-shadow:0 14px 32px rgba(0,194,232,.16)}
+.stat:nth-child(2){background:linear-gradient(165deg,#e4efff,#ffffff 78%);border-color:rgba(59,130,246,.45);box-shadow:0 14px 32px rgba(59,130,246,.16)}
+.stat:nth-child(3){background:linear-gradient(165deg,#efe8ff,#ffffff 78%);border-color:rgba(139,92,246,.45);box-shadow:0 14px 32px rgba(139,92,246,.16)}
+.stat:nth-child(4){background:linear-gradient(165deg,#ddf9e8,#ffffff 78%);border-color:rgba(37,211,102,.45);box-shadow:0 14px 32px rgba(37,211,102,.16)}
+.stat:nth-child(4) .stat-value{background:linear-gradient(120deg,#25d366,#00c2e8);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.value:nth-child(1){background:linear-gradient(150deg,#e9faff,#ffffff 75%);border-color:rgba(0,194,232,.4)}
+.value:nth-child(2){background:linear-gradient(150deg,#f1eaff,#ffffff 75%);border-color:rgba(139,92,246,.4)}
+.value:nth-child(3){background:linear-gradient(150deg,#e7f0ff,#ffffff 75%);border-color:rgba(59,130,246,.4)}
+.value:nth-child(4){background:linear-gradient(150deg,#fff1e2,#ffffff 75%);border-color:rgba(255,177,92,.55)}
+.value:nth-child(2) .value-num{background:linear-gradient(135deg,#8b5cf6,#3b82f6);box-shadow:0 8px 20px rgba(139,92,246,.3)}
+.value:nth-child(3) .value-num{background:linear-gradient(135deg,#3b82f6,#00c2e8);box-shadow:0 8px 20px rgba(59,130,246,.3)}
+.value:nth-child(4) .value-num{background:linear-gradient(135deg,#ffb15c,#ff7e5c);box-shadow:0 8px 20px rgba(255,177,92,.4)}
+.contact-side .contact-card:nth-child(1){background:linear-gradient(150deg,#ddf9e8,#ffffff 80%);border-color:rgba(37,211,102,.4)}
+.contact-side .contact-card:nth-child(2){background:linear-gradient(150deg,#efe7ff,#ffffff 80%);border-color:rgba(139,92,246,.4)}
+.price-row{background:linear-gradient(120deg,#eafaff,#f1edff 55%,#ffffff);border-color:rgba(59,130,246,.35)}
+.panel{border-color:rgba(59,130,246,.28)}
+
+/* ---------- VIDA: botones más modernos y coloridos ---------- */
+.btn-primary{
+  background:linear-gradient(120deg,#00c2e8 0%,#3b82f6 38%,#8b5cf6 72%,#c026d3 105%);
+  background-size:180% 180%;background-position:0% 50%;
+  transition:var(--transition),background-position .55s ease;
+}
+.btn-primary:hover{background-position:95% 50%}
+.btn-ghost{
+  border:2px solid transparent;
+  background:linear-gradient(#ffffff,#ffffff) padding-box,var(--grad) border-box;
+}
+.btn-ghost:hover{border-color:transparent}
 
 /* ---------- Hover premium: relieve que se levanta ---------- */
 .card:hover,.feature:hover,.stat:hover,.price-row:hover,.contact-card:hover,.site-card:hover,.portfolio-item:hover,.value:hover{
