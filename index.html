@@ -12,7 +12,7 @@
 <link rel="icon" type="image/jpeg" href="logo-nav.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Fraunces:ital,wght@1,500;1,600;1,700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Lexend+Exa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 /* ============================================================
    GENESIS NEXA — Rediseño radical: luz, vida y tech premium
@@ -34,9 +34,9 @@
   --amber: #ffb15c;
   --grad: linear-gradient(135deg,#00c2e8 0%,#3b82f6 52%,#8b5cf6 100%);
   --wa: #25d366;
-  --font-head: 'Sora', sans-serif;
-  --font-display: 'Fraunces', serif;
-  --font-body: 'Nunito', sans-serif;
+  --font-head: 'Baloo 2', sans-serif;      /* Rounded Modern: hero, subtítulos, importante */
+  --font-display: 'Baloo 2', sans-serif;
+  --font-body: 'Lexend Exa', sans-serif;   /* Wide Bold: textos restantes */
   --radius: 20px;
   --transition: all .35s cubic-bezier(.25,.46,.45,.94);
   --shadow-sm: 0 1px 2px rgba(13,27,46,.05), 0 10px 26px rgba(13,27,46,.07);
@@ -49,8 +49,8 @@ body{
   background:var(--bg);
   color:var(--ink);
   font-family:var(--font-body);
-  font-size:16.5px;
-  line-height:1.65;
+  font-size:15px;
+  line-height:1.7;
   -webkit-font-smoothing:antialiased;
   overflow-x:hidden;
 }
@@ -84,8 +84,8 @@ section{padding:112px 0;position:relative}
 /* ---------- Tipografía ---------- */
 .eyebrow{
   display:inline-flex;align-items:center;gap:12px;
-  font-family:var(--font-head);
-  font-size:13px;font-weight:700;
+  font-family:var(--font-body);
+  font-size:12.5px;font-weight:700;
   letter-spacing:.18em;text-transform:uppercase;
   background:var(--grad);
   -webkit-background-clip:text;background-clip:text;
@@ -98,7 +98,7 @@ h1{font-size:clamp(2.4rem,5.2vw,3.9rem);font-weight:800}
 h2{font-size:clamp(1.9rem,4.2vw,2.8rem);font-weight:800;margin-bottom:18px}
 h3{font-size:1.18rem;font-weight:700}
 .accent{
-  font-family:var(--font-display);font-style:italic;font-weight:600;
+  font-family:var(--font-display);font-weight:800;
   background:var(--grad);
   -webkit-background-clip:text;background-clip:text;
   -webkit-text-fill-color:transparent;color:var(--blue);
@@ -348,7 +348,7 @@ h3{font-size:1.18rem;font-weight:700}
 }
 .panel-label{
   display:inline-flex;align-items:center;gap:8px;
-  font-family:var(--font-head);font-size:12.5px;font-weight:700;
+  font-family:var(--font-body);font-size:11.5px;font-weight:700;
   letter-spacing:.08em;text-transform:uppercase;color:var(--muted);
   margin-bottom:18px;
 }
