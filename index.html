@@ -780,6 +780,46 @@ footer .logo{color:#fff}
   .float-btn:active{transform:scale(1.08)}
 }
 
+/* ---------- Precios ---------- */
+#precios{background:radial-gradient(950px 580px at 50% 0%, rgba(40,110,255,.15), transparent 62%)}
+.price-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media(max-width:900px){.price-cards{grid-template-columns:1fr}}
+.pcard{
+  background:linear-gradient(165deg,rgba(17,32,74,.85),rgba(9,18,44,.75));
+  border:1px solid var(--line);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-radius:var(--radius);padding:34px 30px;
+  display:flex;flex-direction:column;
+  transition:var(--transition);position:relative;
+  box-shadow:var(--shadow-sm);
+}
+.pcard.star{
+  border-color:rgba(0,194,232,.5);
+  background:linear-gradient(165deg,rgba(0,110,150,.32),rgba(9,18,44,.78) 60%);
+  box-shadow:0 0 44px rgba(0,194,232,.22), var(--shadow-sm);
+}
+.pcard.star::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:var(--grad);border-radius:var(--radius) var(--radius) 0 0;
+}
+.pcard h3{margin-bottom:6px}
+.pcard .p-desc{color:var(--muted);font-size:13.5px;margin-bottom:18px}
+.p-amount{
+  font-family:var(--font-head);font-style:italic;font-weight:900;font-size:2rem;letter-spacing:-.02em;line-height:1.1;
+}
+.p-amount span{
+  background:linear-gradient(120deg,#6fd8ff,#8fadff);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.p-amount small{display:block;font-family:var(--font-body);font-style:normal;font-weight:500;font-size:12.5px;color:var(--muted);margin-top:6px}
+.p-list{list-style:none;margin:20px 0 26px;flex:1;display:flex;flex-direction:column;gap:9px}
+.p-list li{font-size:13.5px;color:#cdd9f2;display:flex;gap:9px;align-items:flex-start;font-weight:400}
+.p-list li::before{content:'✓';color:#4ade80;font-weight:700;flex-shrink:0}
+.pcard .btn{justify-content:center}
+.pcard:hover{transform:translateY(-6px);border-color:rgba(111,216,255,.55);box-shadow:var(--glow)}
+.p-note{margin-top:28px;font-size:12.5px;color:var(--muted-2);max-width:640px}
+
 /* ---------- Tipografía importante: Rounded Modern itálica (elección de Jorge) ---------- */
 .stat-value,.price-row .price,.hero-trust strong,.card-link,.p-chip,
 .site-card-bar strong,.site-card-bar .arrow,.logo,.feature strong,.value strong,
@@ -833,6 +873,7 @@ footer .logo{color:#fff}
       <li><a href="#portafolio" data-es="Portafolio" data-en="Portfolio">Portafolio</a></li>
       <li><a href="#ia" data-es="IA" data-en="AI">IA</a></li>
       <li><a href="#mkt" data-es="Marketing" data-en="Marketing">Marketing</a></li>
+      <li><a href="#precios" data-es="Precios" data-en="Pricing">Precios</a></li>
       <li><a href="#nosotros" data-es="Nosotros" data-en="About">Nosotros</a></li>
     </ul>
     <div class="nav-cta">
@@ -873,6 +914,7 @@ footer .logo{color:#fff}
   <a href="#portafolio" onclick="closeMobileMenu()" data-es="Portafolio" data-en="Portfolio">Portafolio</a>
   <a href="#ia" onclick="closeMobileMenu()" data-es="IA para tu Web" data-en="AI for your Website">IA para tu Web</a>
   <a href="#mkt" onclick="closeMobileMenu()" data-es="Marketing Digital" data-en="Digital Marketing">Marketing Digital</a>
+  <a href="#precios" onclick="closeMobileMenu()" data-es="Precios" data-en="Pricing">Precios</a>
   <a href="#nosotros" onclick="closeMobileMenu()" data-es="Nosotros" data-en="About">Nosotros</a>
   <a href="#contacto" onclick="closeMobileMenu()" data-es="Contacto" data-en="Contact">Contacto</a>
   <a href="https://wa.me/17863570624?text=Hola%20Genesis%20Nexa%2C%20quiero%20hablar%20sobre%20mi%20proyecto." target="_blank" rel="noopener" class="btn btn-primary" data-es="Hablar Ahora" data-en="Talk Now">Hablar Ahora</a>
@@ -891,8 +933,8 @@ footer .logo{color:#fff}
       <span class="dot"></span>
       <span data-es="Páginas web premium — más de 200 entregadas" data-en="Premium websites — 200+ delivered">Páginas web premium — más de 200 entregadas</span>
     </div>
-    <h1 data-es="Tu página web premium, lista para <span class='accent'>vender por ti.</span>" data-en="Your premium website, ready to <span class='accent'>sell for you.</span>">Tu página web premium, lista para <span class='accent'>vender por ti.</span></h1>
-    <p class="hero-sub" data-es="La gente te busca en internet — y si no te encuentra, le compra a otro. Te hacemos una página web moderna, bilingüe y con WhatsApp directo por $4,995 MXN, pago único." data-en="People look for you online — and if they can't find you, they buy from someone else. We build you a modern, bilingual website with direct WhatsApp for $294 USD, one-time payment.">La gente te busca en internet — y si no te encuentra, le compra a otro. Te hacemos una página web moderna, bilingüe y con WhatsApp directo por $4,995 MXN, pago único.</p>
+    <h1 data-es="Páginas web que son más que presencia digital: son un <span class='accent'>vendedor que trabaja 24 horas.</span>" data-en="Websites that are more than a digital presence: they're a <span class='accent'>salesperson working 24 hours.</span>">Páginas web que son más que presencia digital: son un <span class='accent'>vendedor que trabaja 24 horas.</span></h1>
+    <p class="hero-sub" data-es="La gente te busca en internet — y si no te encuentra, le compra a otro. Te hacemos una página web moderna, bilingüe y con WhatsApp directo, lista para vender por ti." data-en="People look for you online — and if they can't find you, they buy from someone else. We build you a modern, bilingual website with direct WhatsApp, ready to sell for you.">La gente te busca en internet — y si no te encuentra, le compra a otro. Te hacemos una página web moderna, bilingüe y con WhatsApp directo, lista para vender por ti.</p>
     <div class="hero-actions">
       <a href="https://wa.me/17863570624?text=Hola%20Genesis%20Nexa%2C%20quiero%20mi%20p%C3%A1gina%20web." target="_blank" rel="noopener" class="btn btn-primary">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.019-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
@@ -915,8 +957,8 @@ footer .logo{color:#fff}
   <div class="container">
     <div class="reveal">
       <span class="eyebrow" data-es="Qué hacemos por ti" data-en="What we do for you">Qué hacemos por ti</span>
-      <h2 data-es="Nos dedicamos a una cosa: tu página web <span class='accent'>que vende.</span>" data-en="We do one thing: your website <span class='accent'>that sells.</span>">Nos dedicamos a una cosa: tu página web <span class='accent'>que vende.</span></h2>
-      <p class="section-sub" data-es="Tu página web premium es nuestro enfoque #1. Y cuando quieras llevarla más lejos, le sumamos IA o publicidad — extras opcionales, solo si tú los pides." data-en="Your premium website is our #1 focus. And when you want to take it further, we add AI or advertising — optional extras, only if you ask for them.">Tu página web premium es nuestro enfoque #1. Y cuando quieras llevarla más lejos, le sumamos IA o publicidad — extras opcionales, solo si tú los pides.</p>
+      <h2 data-es="Somos tu agencia digital completa. Y nuestra especialidad es tu <span class='accent'>página web que vende.</span>" data-en="We're your full digital agency. And our specialty is your <span class='accent'>website that sells.</span>">Somos tu agencia digital completa. Y nuestra especialidad es tu <span class='accent'>página web que vende.</span></h2>
+      <p class="section-sub" data-es="Páginas web, agentes de IA y publicidad en Meta — todo lo digital para que tu negocio venda más. Nuestro enfoque #1: tu página web." data-en="Websites, AI agents and Meta advertising — everything digital to make your business sell more. Our #1 focus: your website.">Páginas web, agentes de IA y publicidad en Meta — todo lo digital para que tu negocio venda más. Nuestro enfoque #1: tu página web.</p>
     </div>
     <div class="grid-3">
       <a href="#web" class="card reveal">
@@ -1190,11 +1232,67 @@ footer .logo{color:#fff}
     </div>
     <div class="price-row reveal">
       <div class="price">
-        <span data-es="Precio a la medida de tu negocio" data-en="Pricing tailored to your business">Precio a la medida de tu negocio</span>
-        <small data-es="Cuéntanos de tu negocio por WhatsApp y en menos de 24 horas tienes una propuesta clara. Sin compromiso y sin contratos forzosos." data-en="Tell us about your business on WhatsApp and you'll have a clear proposal in under 24 hours. No strings attached, no forced contracts.">Cuéntanos de tu negocio por WhatsApp y en menos de 24 horas tienes una propuesta clara. Sin compromiso y sin contratos forzosos.</small>
+        <span data-es="$10,000 MXN al mes — contrato de 1 mes" data-en="$588 USD per month — 1-month contract">$10,000 MXN al mes — contrato de 1 mes</span>
+        <small data-es="Incluye 3 campañas, 8 publicaciones y optimización semanal. Tu presupuesto de anuncios se paga directo a Meta, aparte." data-en="Includes 3 campaigns, 8 posts and weekly optimization. Your ad budget is paid directly to Meta, separately.">Incluye 3 campañas, 8 publicaciones y optimización semanal. Tu presupuesto de anuncios se paga directo a Meta, aparte.</small>
       </div>
       <a href="https://wa.me/17863570624?text=Hola%20Genesis%20Nexa%2C%20quiero%20m%C3%A1s%20clientes%20con%20marketing%20digital." target="_blank" rel="noopener" class="btn btn-primary" data-es="Quiero más clientes" data-en="I want more clients">Quiero más clientes</a>
     </div>
+  </div>
+</section>
+
+<!-- ==================== PRECIOS ==================== -->
+<section id="precios" class="service">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow" data-es="Precios claros" data-en="Clear pricing">Precios claros</span>
+      <h2 data-es="Sin sorpresas: esto es lo que <span class='accent'>cuesta vender más.</span>" data-en="No surprises: this is what it <span class='accent'>costs to sell more.</span>">Sin sorpresas: esto es lo que <span class='accent'>cuesta vender más.</span></h2>
+      <p class="section-sub" data-es="Empieza con tu página web y súmale lo que tu negocio necesite. Todo se contrata directo por WhatsApp." data-en="Start with your website and add whatever your business needs. Everything is booked directly on WhatsApp.">Empieza con tu página web y súmale lo que tu negocio necesite. Todo se contrata directo por WhatsApp.</p>
+    </div>
+    <div class="price-cards">
+      <div class="pcard star reveal">
+        <span class="card-tag" data-es="⭐ Lo más pedido" data-en="⭐ Most popular">⭐ Lo más pedido</span>
+        <h3 data-es="Página Web Premium" data-en="Premium Website">Página Web Premium</h3>
+        <p class="p-desc" data-es="Tu vendedor 24 horas, hecho a la medida." data-en="Your 24-hour salesperson, custom built.">Tu vendedor 24 horas, hecho a la medida.</p>
+        <div class="p-amount"><span data-es="$4,995 MXN" data-en="$294 USD">$4,995 MXN</span><small data-es="Pago único — tuya para siempre" data-en="One-time payment — yours forever">Pago único — tuya para siempre</small></div>
+        <ul class="p-list">
+          <li data-es="Diseño premium 100% a tu medida" data-en="Premium design, 100% custom">Diseño premium 100% a tu medida</li>
+          <li data-es="Bilingüe: español e inglés" data-en="Bilingual: Spanish & English">Bilingüe: español e inglés</li>
+          <li data-es="Botón directo a WhatsApp + 3 redes" data-en="Direct WhatsApp button + 3 social networks">Botón directo a WhatsApp + 3 redes</li>
+          <li data-es="SEO para Google y certificado SSL" data-en="Google SEO and SSL certificate">SEO para Google y certificado SSL</li>
+          <li data-es="Perfecta en celular, tablet y computadora" data-en="Perfect on phone, tablet and desktop">Perfecta en celular, tablet y computadora</li>
+        </ul>
+        <a href="https://wa.me/17863570624?text=Hola%20Genesis%20Nexa%2C%20quiero%20mi%20p%C3%A1gina%20web%20nueva." target="_blank" rel="noopener" class="btn btn-primary" data-es="Quiero mi web" data-en="I want my website">Quiero mi web</a>
+      </div>
+      <div class="pcard reveal">
+        <span class="card-tag opt" data-es="Extra para tu web" data-en="Extra for your website">Extra para tu web</span>
+        <h3 data-es="Agente IA Integrado" data-en="Integrated AI Agent">Agente IA Integrado</h3>
+        <p class="p-desc" data-es="Tu web también atiende y cierra ventas sola." data-en="Your website also serves and closes sales on its own.">Tu web también atiende y cierra ventas sola.</p>
+        <div class="p-amount"><span data-es="+$3,000 MXN" data-en="+$176 USD">+$3,000 MXN</span><small data-es="Se suma al precio de tu página web" data-en="Added to your website price">Se suma al precio de tu página web</small></div>
+        <ul class="p-list">
+          <li data-es="Atiende a tus clientes 24/7" data-en="Serves your clients 24/7">Atiende a tus clientes 24/7</li>
+          <li data-es="Responde al instante, en dos idiomas" data-en="Replies instantly, in two languages">Responde al instante, en dos idiomas</li>
+          <li data-es="Entrenado con tu negocio y tus precios" data-en="Trained on your business and your pricing">Entrenado con tu negocio y tus precios</li>
+          <li data-es="Convierte visitas en conversaciones de venta" data-en="Turns visits into sales conversations">Convierte visitas en conversaciones de venta</li>
+          <li data-es="Como el asistente de esta página — pruébalo" data-en="Like this page's assistant — try it">Como el asistente de esta página — pruébalo</li>
+        </ul>
+        <a href="https://wa.me/17863570624?text=Hola%20Genesis%20Nexa%2C%20quiero%20mi%20web%20con%20agente%20de%20IA." target="_blank" rel="noopener" class="btn btn-ghost" data-es="Quiero web + IA" data-en="I want website + AI">Quiero web + IA</a>
+      </div>
+      <div class="pcard reveal">
+        <span class="card-tag opt" data-es="Extra para tu web" data-en="Extra for your website">Extra para tu web</span>
+        <h3 data-es="Publicidad en Meta" data-en="Meta Advertising">Publicidad en Meta</h3>
+        <p class="p-desc" data-es="Llenamos tu web de gente lista para comprar." data-en="We fill your website with people ready to buy.">Llenamos tu web de gente lista para comprar.</p>
+        <div class="p-amount"><span data-es="$10,000 MXN" data-en="$588 USD">$10,000 MXN</span><small data-es="Al mes — contrato de 1 mes" data-en="Per month — 1-month contract">Al mes — contrato de 1 mes</small></div>
+        <ul class="p-list">
+          <li data-es="3 campañas al mes en Facebook e Instagram" data-en="3 monthly campaigns on Facebook & Instagram">3 campañas al mes en Facebook e Instagram</li>
+          <li data-es="8 publicaciones al mes con producción completa" data-en="8 monthly posts with full production">8 publicaciones al mes con producción completa</li>
+          <li data-es="Optimización de campañas cada semana" data-en="Weekly campaign optimization">Optimización de campañas cada semana</li>
+          <li data-es="Reporte mensual: ves lo que ganas" data-en="Monthly report: you see what you earn">Reporte mensual: ves lo que ganas</li>
+          <li data-es="Tu presupuesto de anuncios se paga directo a Meta" data-en="Your ad budget is paid directly to Meta">Tu presupuesto de anuncios se paga directo a Meta</li>
+        </ul>
+        <a href="https://wa.me/17863570624?text=Hola%20Genesis%20Nexa%2C%20quiero%20publicidad%20en%20Meta." target="_blank" rel="noopener" class="btn btn-ghost" data-es="Quiero publicidad" data-en="I want ads">Quiero publicidad</a>
+      </div>
+    </div>
+    <p class="p-note reveal" data-es="Precios en pesos mexicanos; la versión en inglés muestra dólares (cambio de referencia: $17 MXN por dólar). ¿Dudas? Escríbenos por WhatsApp y te respondemos al momento." data-en="English version shows US dollars (reference rate: 17 MXN per dollar). Questions? Message us on WhatsApp for an instant reply.">Precios en pesos mexicanos; la versión en inglés muestra dólares (cambio de referencia: $17 MXN por dólar). ¿Dudas? Escríbenos por WhatsApp y te respondemos al momento.</p>
   </div>
 </section>
 
@@ -1332,6 +1430,7 @@ footer .logo{color:#fff}
         </div>
         <div>
           <h4 data-es="Empresa" data-en="Company">Empresa</h4>
+          <a href="#precios" data-es="Precios" data-en="Pricing">Precios</a>
           <a href="#nosotros" data-es="Nosotros" data-en="About">Nosotros</a>
           <a href="#resultados" data-es="Resultados" data-en="Results">Resultados</a>
           <a href="#portafolio" data-es="Portafolio" data-en="Portfolio">Portafolio</a>
@@ -1384,12 +1483,12 @@ footer .logo{color:#fff}
       data-reply-en="Everything: premium custom design, bilingual (Spanish & English), direct WhatsApp button, 3 social networks, Google SEO and SSL certificate — ready to sell. Want to start?">¿Qué incluye la página web?</button>
     <button class="chat-option" onclick="chatOption(this)"
       data-es="¿Puedo agregarle IA a mi web?" data-en="Can I add AI to my website?"
-      data-reply-es="¡Sí! Le integramos un agente de IA que atiende y vende por ti 24/7 — como yo ahora mismo. Es un extra opcional con costo adicional: escríbenos por WhatsApp y te damos el precio."
-      data-reply-en="Yes! We integrate an AI agent that serves and sells for you 24/7 — like me right now. It's an optional extra at an additional cost: message us on WhatsApp for pricing.">¿Puedo agregarle IA a mi web?</button>
+      data-reply-es="¡Sí! Le integramos un agente de IA que atiende y vende por ti 24/7 — como yo ahora mismo. Son $3,000 MXN adicionales al precio de tu página web. ¿Te interesa?"
+      data-reply-en="Yes! We integrate an AI agent that serves and sells for you 24/7 — like me right now. It's an extra $176 USD added to your website price. Interested?">¿Puedo agregarle IA a mi web?</button>
     <button class="chat-option" onclick="chatOption(this)"
       data-es="¿Y si quiero publicidad también?" data-en="What if I also want ads?"
-      data-reply-es="También es un extra opcional: manejamos tus campañas de Facebook e Instagram y todo tu contenido para llenar tu web de clientes. El precio se arma a tu medida — escríbenos por WhatsApp."
-      data-reply-en="That's also an optional extra: we run your Facebook & Instagram campaigns and all your content to fill your website with clients. Pricing is tailored — message us on WhatsApp.">¿Y si quiero publicidad también?</button>
+      data-reply-es="Claro: manejamos tus campañas de Facebook e Instagram con todo el contenido incluido por $10,000 MXN al mes, contrato de 1 mes. Tu presupuesto de anuncios se paga directo a Meta, aparte. ¿Te interesa?"
+      data-reply-en="Sure: we run your Facebook & Instagram campaigns with all content included for $588 USD per month, 1-month contract. Your ad budget is paid directly to Meta, separately. Interested?">¿Y si quiero publicidad también?</button>
   </div>
   <div class="chatbot-input-row">
     <input type="text" id="chatbot-input" placeholder="Escribe tu mensaje..." onkeydown="if(event.key==='Enter')sendChatMsg()">
