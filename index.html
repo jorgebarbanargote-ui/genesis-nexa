@@ -7,9 +7,18 @@
 <meta name="description" content="Creamos tu página web premium: bilingüe, moderna, con WhatsApp directo y lista para vender. IA y marketing disponibles como extras opcionales.">
 <meta property="og:title" content="Genesis Nexa — Páginas Web Premium que Venden">
 <meta property="og:description" content="Tu página web premium, bilingüe y lista para vender por ti. Pago único. IA y publicidad como extras opcionales.">
-<meta property="og:image" content="logo-nav.jpg">
+<meta property="og:image" content="https://genesisnex.com/hero-poster-julio6.jpg">
+<meta property="og:url" content="https://genesisnex.com/">
 <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Genesis Nexa — Páginas Web Premium que Venden">
+<meta name="twitter:description" content="Tu página web premium, bilingüe y lista para vender por ti. Pago único.">
+<meta name="twitter:image" content="https://genesisnex.com/hero-poster-julio6.jpg">
+<link rel="canonical" href="https://genesisnex.com/">
 <link rel="icon" type="image/jpeg" href="logo-nav.jpg">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Genesis Nexa","url":"https://genesisnex.com/","image":"https://genesisnex.com/hero-poster-julio6.jpg","logo":"https://genesisnex.com/logo-nav.jpg","description":"Páginas web premium bilingües listas para vender, con IA y marketing digital como extras opcionales.","telephone":"+17863570624","sameAs":["https://www.instagram.com/genesisnexa","https://www.facebook.com/share/18xg8Brn74/"],"makesOffer":{"@type":"Offer","name":"Página web premium","price":"4995","priceCurrency":"MXN"}}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -771,6 +780,31 @@ footer .logo{color:#fff}
   .float-btn:active{transform:scale(1.08)}
 }
 
+/* ---------- Legales (modales one-page, sin salir de la página) ---------- */
+.legal-links{display:flex;gap:18px;flex-wrap:wrap}
+.legal-links a{color:rgba(255,255,255,.7);text-decoration:underline;text-underline-offset:3px;font-size:13px;transition:var(--transition)}
+.legal-links a:hover{color:#fff}
+.legal-modal{
+  position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;
+  background:rgba(3,8,24,.75);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  padding:20px;
+}
+.legal-modal.open{display:flex}
+.legal-box{
+  max-width:620px;width:100%;max-height:82vh;overflow-y:auto;
+  background:#0c1a40;border:1px solid var(--line-strong);border-radius:20px;padding:32px;
+  box-shadow:0 40px 100px rgba(2,7,22,.8), 0 0 40px rgba(59,130,246,.2);
+}
+.legal-box h3{margin-bottom:16px;font-size:1.3rem}
+.legal-box p{font-size:13.8px;color:var(--muted);margin-bottom:12px;line-height:1.65}
+.legal-box strong{color:#dce8ff;font-weight:600}
+.legal-close{
+  margin-top:18px;background:var(--grad);color:#fff;border:none;border-radius:100px;
+  padding:11px 26px;font-family:var(--font-head);font-weight:600;font-size:14px;transition:var(--transition);
+}
+.legal-close:hover{transform:translateY(-2px);box-shadow:0 0 22px rgba(59,130,246,.5)}
+
 /* ---------- Reveal on scroll (escenas de película) ---------- */
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
 .reveal.visible{opacity:1;transform:translateY(0)}
@@ -1302,6 +1336,10 @@ footer .logo{color:#fff}
     </div>
     <div class="footer-bottom">
       <span>© <span id="year"></span> Genesis Nexa. <span data-es="Todos los derechos reservados." data-en="All rights reserved.">Todos los derechos reservados.</span></span>
+      <span class="legal-links">
+        <a href="#" onclick="openLegal('modal-privacidad');return false" data-es="Política de Privacidad" data-en="Privacy Policy">Política de Privacidad</a>
+        <a href="#" onclick="openLegal('modal-terminos');return false" data-es="Términos y Condiciones" data-en="Terms & Conditions">Términos y Condiciones</a>
+      </span>
       <span data-es="Hecho para negocios que quieren vender más." data-en="Made for businesses that want to sell more.">Hecho para negocios que quieren vender más.</span>
     </div>
   </div>
@@ -1353,6 +1391,32 @@ footer .logo{color:#fff}
     <button class="chatbot-send" onclick="sendChatMsg()" aria-label="Enviar">
       <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
     </button>
+  </div>
+</div>
+
+<!-- ==================== LEGALES (MODALES ONE-PAGE) ==================== -->
+<div class="legal-modal" id="modal-privacidad" onclick="if(event.target===this)closeLegal()">
+  <div class="legal-box">
+    <h3 data-es="Política de Privacidad" data-en="Privacy Policy">Política de Privacidad</h3>
+    <p data-es="En Genesis Nexa respetamos tus datos. Esta página recopila únicamente la información que tú decides compartir." data-en="At Genesis Nexa we respect your data. This page only collects the information you choose to share.">En Genesis Nexa respetamos tus datos. Esta página recopila únicamente la información que tú decides compartir.</p>
+    <p data-es="<strong>Formulario de contacto:</strong> tu nombre, email, servicio de interés y mensaje se usan solamente para abrir tu conversación de WhatsApp con nosotros. No se almacenan en los servidores de esta página." data-en="<strong>Contact form:</strong> your name, email, service of interest and message are used only to open your WhatsApp conversation with us. They are not stored on this page's servers."><strong>Formulario de contacto:</strong> tu nombre, email, servicio de interés y mensaje se usan solamente para abrir tu conversación de WhatsApp con nosotros. No se almacenan en los servidores de esta página.</p>
+    <p data-es="<strong>Asistente de IA:</strong> los mensajes que escribes en el chat se procesan mediante un proveedor de inteligencia artificial con el único fin de generar una respuesta. No se usan para otros fines ni se comparten con terceros para publicidad." data-en="<strong>AI assistant:</strong> the messages you type in the chat are processed by an artificial intelligence provider for the sole purpose of generating a reply. They are not used for other purposes nor shared with third parties for advertising."><strong>Asistente de IA:</strong> los mensajes que escribes en el chat se procesan mediante un proveedor de inteligencia artificial con el único fin de generar una respuesta. No se usan para otros fines ni se comparten con terceros para publicidad.</p>
+    <p data-es="<strong>Preferencias:</strong> guardamos tu idioma preferido en tu propio navegador (localStorage). No usamos cookies de rastreo ni vendemos datos personales." data-en="<strong>Preferences:</strong> we save your preferred language in your own browser (localStorage). We do not use tracking cookies nor sell personal data."><strong>Preferencias:</strong> guardamos tu idioma preferido en tu propio navegador (localStorage). No usamos cookies de rastreo ni vendemos datos personales.</p>
+    <p data-es="<strong>Tus derechos:</strong> para cualquier duda sobre tus datos o para solicitar su eliminación, escríbenos por WhatsApp al +1 (786) 357-0624." data-en="<strong>Your rights:</strong> for any questions about your data or to request its deletion, message us on WhatsApp at +1 (786) 357-0624."><strong>Tus derechos:</strong> para cualquier duda sobre tus datos o para solicitar su eliminación, escríbenos por WhatsApp al +1 (786) 357-0624.</p>
+    <p data-es="Última actualización: julio 2026." data-en="Last updated: July 2026.">Última actualización: julio 2026.</p>
+    <button class="legal-close" onclick="closeLegal()" data-es="Cerrar" data-en="Close">Cerrar</button>
+  </div>
+</div>
+<div class="legal-modal" id="modal-terminos" onclick="if(event.target===this)closeLegal()">
+  <div class="legal-box">
+    <h3 data-es="Términos y Condiciones" data-en="Terms & Conditions">Términos y Condiciones</h3>
+    <p data-es="<strong>Servicios:</strong> Genesis Nexa ofrece diseño de páginas web premium, con integración de inteligencia artificial y marketing digital como extras opcionales." data-en="<strong>Services:</strong> Genesis Nexa offers premium website design, with artificial intelligence integration and digital marketing as optional extras."><strong>Servicios:</strong> Genesis Nexa ofrece diseño de páginas web premium, con integración de inteligencia artificial y marketing digital como extras opcionales.</p>
+    <p data-es="<strong>Precios:</strong> los precios mostrados en esta página son de referencia (página web: $4,995 MXN / $294 USD, pago único). Los extras se cotizan por WhatsApp. El alcance, los tiempos de entrega y la forma de pago se acuerdan por escrito con cada cliente antes de iniciar el proyecto." data-en="<strong>Pricing:</strong> the prices shown on this page are for reference (website: $4,995 MXN / $294 USD, one-time payment). Extras are quoted via WhatsApp. Scope, delivery times and payment terms are agreed in writing with each client before the project starts."><strong>Precios:</strong> los precios mostrados en esta página son de referencia (página web: $4,995 MXN / $294 USD, pago único). Los extras se cotizan por WhatsApp. El alcance, los tiempos de entrega y la forma de pago se acuerdan por escrito con cada cliente antes de iniciar el proyecto.</p>
+    <p data-es="<strong>Propiedad:</strong> la página web entregada es propiedad del cliente una vez completado el pago acordado." data-en="<strong>Ownership:</strong> the delivered website becomes the client's property once the agreed payment is completed."><strong>Propiedad:</strong> la página web entregada es propiedad del cliente una vez completado el pago acordado.</p>
+    <p data-es="<strong>Asistente de IA:</strong> las respuestas del chat de esta página son informativas y no constituyen un contrato ni una cotización final." data-en="<strong>AI assistant:</strong> the chat replies on this page are informational and do not constitute a contract or a final quote."><strong>Asistente de IA:</strong> las respuestas del chat de esta página son informativas y no constituyen un contrato ni una cotización final.</p>
+    <p data-es="<strong>Ejemplos:</strong> los sitios web mostrados como trabajos pertenecen a sus respectivos dueños y se muestran como muestra del trabajo realizado por Genesis Nexa." data-en="<strong>Examples:</strong> the websites shown as work samples belong to their respective owners and are displayed as examples of work delivered by Genesis Nexa."><strong>Ejemplos:</strong> los sitios web mostrados como trabajos pertenecen a sus respectivos dueños y se muestran como muestra del trabajo realizado por Genesis Nexa.</p>
+    <p data-es="Al usar este sitio aceptas estos términos. Última actualización: julio 2026." data-en="By using this site you accept these terms. Last updated: July 2026.">Al usar este sitio aceptas estos términos. Última actualización: julio 2026.</p>
+    <button class="legal-close" onclick="closeLegal()" data-es="Cerrar" data-en="Close">Cerrar</button>
   </div>
 </div>
 
@@ -1514,6 +1578,17 @@ async function sendChatMsg(){
   typing.remove();
   addMsg(reply, 'bot');
 }
+
+/* ==================== LEGALES ==================== */
+function openLegal(id){
+  document.getElementById(id).classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLegal(){
+  document.querySelectorAll('.legal-modal.open').forEach(m=>m.classList.remove('open'));
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeLegal(); });
 
 /* ==================== INIT ==================== */
 document.getElementById('year').textContent = new Date().getFullYear();
