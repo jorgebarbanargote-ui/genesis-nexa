@@ -6,7 +6,7 @@ RUN mkdir -p /app
 COPY api/server.js /app/server.js
 
 # Copy website files
-ARG CACHEBUST=29
+ARG CACHEBUST=30
 COPY . /usr/share/nginx/html
 RUN rm -rf /usr/share/nginx/html/api
 
