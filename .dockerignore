@@ -1,0 +1,37 @@
+# Deploy slim: la imagen solo debe contener los archivos que el sitio usa en runtime.
+.git
+.gitignore
+.dockerignore
+.DS_Store
+**/.DS_Store
+
+# Documentos / fuentes que no van al sitio
+*.md
+*.rtf
+*.skill
+*.pdf
+*.zip
+
+# Respaldos y previews
+index-backup-*.html
+preview-*.html
+
+# Carpeta vieja del sitio anterior
+genesis-nexa-web/
+
+# Originales pesados sin usar en la web (las imágenes servidas son .jpg)
+*.mov
+*.png
+*.jpeg
+
+# Imágenes .jpg sin usar en la web actual
+hero-bg.jpg
+hero-poster.jpg
+hero-poster-julio6.jpg
+cliente-ana-maria-bakery.jpg
+cliente-millionaires-barbershop.jpg
+portfolio/07.jpg
+
+# Videos: conservar solo el del hero
+*.mp4
+!hero-capcut.mp4

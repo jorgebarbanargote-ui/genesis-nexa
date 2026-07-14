@@ -1,0 +1,12 @@
+.DS_Store
+**/.DS_Store
+
+# Archivos fuente pesados que NO deben ir a GitHub (el .mov supera el límite de 100MB)
+*.mov
+*.zip
+
+# Previews temporales de fuentes
+preview-*.html
+
+# Copias de skills
+skill web-rediseno-radical copy.md
