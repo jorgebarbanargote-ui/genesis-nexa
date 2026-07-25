@@ -22,6 +22,7 @@ genesis-nexa-web/
 # Originales pesados sin usar en la web (las imágenes servidas son .jpg)
 *.mov
 *.png
+!logo-nav.png
 *.jpeg
 
 # Imágenes .jpg sin usar en la web actual
