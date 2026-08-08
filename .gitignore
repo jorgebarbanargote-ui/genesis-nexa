@@ -10,3 +10,11 @@ preview-*.html
 
 # Copias de skills
 skill web-rediseno-radical copy.md
+
+# Originales de video sin recodificar (los servidos son los hero-*.mp4 recodificados)
+hero-capcut-ORIGINAL-14mb.mp4
+hero video *.mp4
+0dcace66-*.mp4
+
+# Dependencias de las herramientas locales
+herramientas/node_modules/

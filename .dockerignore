@@ -33,6 +33,18 @@ cliente-ana-maria-bakery.jpg
 cliente-millionaires-barbershop.jpg
 portfolio/07.jpg
 
-# Videos: conservar solo el del hero
+# Videos: conservar solo los del hero
 *.mp4
 !hero-capcut.mp4
+!hero-video-2.mp4
+!hero-video-2-movil.mp4
+!hero-video-3-movil.mp4
+!hero-capcut-movil.mp4
+
+# Herramientas de desarrollo y respaldos de optimización
+herramientas/
+hero-capcut-ORIGINAL-14mb.mp4
+
+# JPG sustituidos por WebP (solo se conservan los de og:image/favicon)
+web-*.jpg
+ai-chat-bg.jpg
