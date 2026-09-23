@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://genesisnex.com/</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://genesisnex.com/"/>
@@ -12,11 +12,29 @@
   </url>
   <url>
     <loc>https://genesisnex.com/en/</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://genesisnex.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://genesisnex.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://genesisnex.com/"/>
+  </url>
+  <url>
+    <loc>https://genesisnex.com/agente-whatsapp/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://genesisnex.com/agente-whatsapp/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://genesisnex.com/en/agente-whatsapp/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genesisnex.com/agente-whatsapp/"/>
+  </url>
+  <url>
+    <loc>https://genesisnex.com/en/agente-whatsapp/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://genesisnex.com/agente-whatsapp/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://genesisnex.com/en/agente-whatsapp/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genesisnex.com/agente-whatsapp/"/>
   </url>
 </urlset>

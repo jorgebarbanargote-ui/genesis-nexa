@@ -1,26 +1,90 @@
 # Genesis Nexa
 
-> Agencia digital que crea páginas web premium bilingües (español/inglés) listas para vender, con chatbot de inteligencia artificial y publicidad en Meta como extras opcionales. Sirve a negocios de México y Estados Unidos, con clientes reales en Cancún, la Riviera Maya, Campeche y Miami.
+> Agencia digital para negocios de México y Estados Unidos. Diseño web bilingüe, agentes de IA y publicidad en Meta.
 
-Genesis Nexa diseña y entrega sitios web completos de pago único (sin mensualidades por el diseño): diseño premium, bilingüe ES/EN, WhatsApp directo, SEO para Google y buscadores de IA, y panel de administración para el dueño. El contacto se hace por WhatsApp al +1 (786) 357-0624.
+## Paquetes de páginas web
+- Landing Pro: $3,000 MXNPago único · lista en 1 a 2 días hábiles. Una sola página, enfocada en un solo producto o promoción.
+- Web Business: $5,000 MXNPago único · con panel administrativo. La mejor relación calidad-precio: es la que elige la mayoría.
+- Web AI: $6,500 MXNPago único · incluye todo lo de Web Business. Tu página atiende a tus clientes sola, 24/7.
+- E-commerce AI: $8,000 MXNPago único · nuestra solución más completa. Vende, reserva y cobra directo desde tu web.
 
-## Servicios
-- Página web premium: sitio completo, bilingüe, rápido y optimizado para vender; cotización personalizada por WhatsApp.
-- Chatbot con inteligencia artificial: responde a los clientes del negocio 24/7 dentro de la web.
-- Marketing digital: campañas de anuncios en Meta (Facebook e Instagram) administradas.
+Web Business, Web AI y E-commerce AI incluyen la compra del dominio y el hosting con Genesis Nexa durante el primer año. Si prefieres un hosting independiente a tu nombre, se paga aparte. La renovación de dominio y hosting con Genesis Nexa cuesta $2,500 MXN al año desde el segundo año. Para Landing Pro, consulta el alcance del alojamiento y dominio.
 
-## Trabajos reales (webs entregadas y en producción)
-- [Experiencias Isla](https://experienciasisla.com/): tours y nado con tiburón ballena en Isla Mujeres.
-- [Rivana Car Rental](https://rivanarentalcar.com/): renta de autos en Cancún y la Riviera Maya.
-- [SunSplash Cleaning](https://sunsplashcleaning.com/): pressure washing en Miami.
-- [MCA House Cleaning](https://mcahousecleaning.com/): limpieza de casas en Miami.
-- [Rios Garden](https://www.riosgarden.com.mx/): control de plagas y jardinería en Campeche.
-- [GRMT Transport](https://grmt.site/): transportación turística en Cancún.
-- [Catch Me Cancún](https://catchmecancun.mx/): transportación privada en Cancún.
+## Preguntas sobre páginas web
+
+### ¿Cuánto cuesta una página web en Genesis Nexa?
+Las páginas web empiezan en $5,000 MXN: Web Business $5,000 MXN, Web AI $6,500 MXN y E-commerce AI $8,000 MXN, todas de pago único y sin mensualidades por el diseño. La más elegida es la Web Business de $5,000 MXN, por su relación calidad-precio. Si tu negocio anuncia un solo producto o una sola promoción, tenemos la Landing Pro de $3,000 MXN. Te ayudamos a elegir por WhatsApp al +1 (786) 357-0624.
+
+### ¿Hacen agentes de inteligencia artificial para WhatsApp?
+Sí, en tres planes. WhatsApp AI Solo, para quien atiende solo su negocio: $599 MXN al mes, sin costo de activación y con 7 días gratis. WhatsApp AI Business, para equipos: $1,199 MXN al mes, también sin costo de activación y con 7 días gratis. WhatsApp AI Pro, para varias sucursales: $1,999 MXN al mes más $3,000 MXN de implementación. Contesta a tus clientes 24/7 con la información real de tu negocio y te avisa cuando alguien está listo para comprar. Se conecta con un código QR desde tu celular, sin cuenta de empresa de Meta.
+
+### ¿Cuánto cuesta mantener funcionando un agente de WhatsApp?
+La mensualidad es de $599 MXN en el plan Solo, $1,199 MXN en Business y $1,999 MXN en Pro, y ya incluye los mensajes inteligentes, los ajustes de respuestas, los cambios de precios, horarios y promociones y los nuevos entrenamientos. No pagas el consumo de inteligencia artificial aparte. En Solo y Business pruebas 7 días gratis, sin costo de activación, y al octavo día pagas el mes por adelantado.
+
+### ¿En cuánto tiempo entregan una página web?
+Entre 3 y 5 días hábiles desde que apruebas los textos y las fotos. Ese plazo incluye el diseño completo, la versión en español e inglés, la conexión de tu WhatsApp y la puesta en línea. Si el proyecto necesita sesión de fotos o más secciones de lo habitual, te lo decimos antes de empezar.
+
+### ¿La página web incluye versión en inglés?
+Web Business, Web AI y E-commerce AI incluyen versiones en español e inglés. Para Landing Pro confirmamos el alcance y los idiomas al preparar tu propuesta.
+
+### ¿Puedo actualizar mi web sin saber programar?
+Web Business, Web AI y E-commerce AI incluyen panel administrativo. Antes de empezar definimos contigo qué contenidos podrás editar. Landing Pro no incluye panel administrativo.
+
+### ¿Trabajan con negocios fuera de Cancún?
+Sí. Tenemos clientes en Cancún, la Riviera Maya, Campeche y Miami, y trabajamos con negocios de todo México y Estados Unidos. Todo el proceso es remoto: la información se recopila por WhatsApp, las revisiones se hacen sobre enlaces en vivo y la entrega es en línea. No hace falta ninguna reunión presencial.
+
+### ¿Qué incluye una página web premium?
+Web Business incluye diseño bilingüe, WhatsApp, panel administrativo y motor de reservas. Web AI añade un agente de IA dentro de la página; E-commerce AI añade tienda y pagos en línea. Web Business, Web AI y E-commerce AI incluyen la compra del dominio y el hosting con Genesis Nexa durante el primer año. Si prefieres un hosting independiente a tu nombre, se paga aparte. La renovación de dominio y hosting con Genesis Nexa cuesta $2,500 MXN al año desde el segundo año. Para Landing Pro, consulta el alcance del alojamiento y dominio.
+
+### ¿Qué hace el chatbot con inteligencia artificial?
+Responde preguntas sobre precios, horarios y servicios con la información de tu negocio y orienta al visitante para contactarte. Está incluido en Web AI y E-commerce AI. El agente para WhatsApp es un servicio distinto con su propio plan. Confirmamos contigo el consumo de IA y las integraciones antes de contratar.
+
+### ¿Hacen publicidad en Facebook e Instagram?
+Sí, administramos campañas en Meta para negocios que ya tienen su página web lista. Nos encargamos del diseño de los anuncios, de la segmentación del público y del reporte mensual de resultados. Tú decides cuánto inviertes en anuncios y ese presupuesto se paga directo a Meta. Se cotiza aparte de la web.
+
+### ¿Cuánto cuesta renovar el dominio y el hosting?
+Web Business, Web AI y E-commerce AI incluyen la compra del dominio y el hosting con Genesis Nexa durante el primer año. Desde el segundo año, la renovación cuesta $2,500 MXN al año. Si prefieres un hosting independiente a tu nombre, se paga aparte.
+
+## Agentes de IA para WhatsApp
+
+### ¿Cuánto cuesta un agente de IA para WhatsApp?
+Tenemos tres planes. WhatsApp AI Solo, para quien atiende su negocio por su cuenta: $599 MXN al mes. WhatsApp AI Business, para equipos: $1,199 MXN al mes. WhatsApp AI Pro, para negocios con varias sucursales: $1,999 MXN al mes más $3,000 MXN de implementación. Solo y Business no cobran activación y se prueban 7 días gratis. Los mensajes inteligentes van incluidos en la mensualidad: no pagas el consumo de inteligencia artificial aparte.
+
+### ¿Necesito una cuenta de empresa de Meta o la API oficial de WhatsApp?
+No. El agente se conecta a tu WhatsApp escaneando un código QR desde tu celular, igual que WhatsApp Web. Usas tu mismo número de siempre, sin trámites con Meta, sin verificación de empresa y sin pagar por plantillas de mensaje.
+
+### ¿El agente inventa respuestas?
+No. Lo entrenamos con la información real de tu negocio: precios, horarios, servicios y las preguntas que más te hacen. Cuando le preguntan algo que no está en esa información, no improvisa: avisa que te va a pasar el mensaje a ti.
+
+### ¿Puedo contestar yo cuando quiera?
+Sí. En cuanto tú escribes en esa conversación, el agente se pausa solo y te deja atender al cliente. También puedes pausarlo desde el panel de administración cuando quieras, y volver a activarlo con un clic.
+
+### ¿Cómo me entero cuando hay un cliente interesado?
+El agente detecta cuándo alguien está listo para comprar o pide hablar con una persona, y te manda un aviso con el nombre, el número y el resumen de lo que pidió. No tienes que estar revisando conversaciones todo el día.
+
+### ¿Qué pasa si me paso de los mensajes de mi plan?
+Te avisamos antes de llegar al tope, nunca después. Si tu negocio creció y necesitas más, te pasamos al plan siguiente y solo pagas la diferencia. No te cobramos nada de más sin decírtelo antes, y el agente no se apaga de golpe sin avisarte.
+
+### ¿En cuánto tiempo queda funcionando?
+Entre 3 y 7 días desde que nos pasas la información de tu negocio: precios, servicios, horarios y las preguntas que más te hacen. Ese plazo incluye la conexión de tu WhatsApp, el entrenamiento del agente y las pruebas contigo antes de dejarlo atendiendo clientes reales.
+
+### ¿Funciona si mi negocio no tiene página web?
+Sí. El agente de WhatsApp funciona por su cuenta, sin necesidad de página web. Si además quieres una, la hacemos aparte desde $5,000 MXN y conectamos las dos cosas para que el mismo agente atienda tu web y tu WhatsApp.
+
+## Portafolio
+- [Experiencias Isla — nado con tiburón ballena y tours en Isla Mujeres, hecha por Genesis Nexa](https://experienciasisla.com/)
+- [Rivana Car Rental — renta de autos en Cancún, hecha por Genesis Nexa](https://rivanarentalcar.com/)
+- [SunSplash Cleaning — pressure washing en Miami, hecha por Genesis Nexa](https://sunsplashcleaning.com/)
+- [MCA House Cleaning — limpieza de casas en Miami, hecha por Genesis Nexa](https://mcahousecleaning.com/)
+- [Rios Garden — control de plagas en Campeche, hecha por Genesis Nexa](https://www.riosgarden.com.mx/)
+- [Grand Riviera Maya Transport — transfers en Cancún, hecha por Genesis Nexa](https://grmt.mx/)
+- [Catch Me Cancún — transportación privada en Cancún, hecha por Genesis Nexa](https://catchmecancun.mx/)
 
 ## Páginas
-- [Inicio (español)](https://genesisnex.com/)
-- [Inicio (inglés)](https://genesisnex.com/en/)
+- [Inicio en español](https://genesisnex.com/)
+- [Home in English](https://genesisnex.com/en/)
+- [Agente de WhatsApp](https://genesisnex.com/agente-whatsapp/)
+- [WhatsApp agent in English](https://genesisnex.com/en/agente-whatsapp/)
 
 ## Contacto
 - WhatsApp: +1 (786) 357-0624
