@@ -32,7 +32,7 @@ jobs:
           done
           curl -fsS http://127.0.0.1:8080/api/health
           for route in / /en/ /agente-whatsapp/ /en/agente-whatsapp/ /site.css /site.js /ai-avatar.png /robots.txt /sitemap.xml /llms.txt; do
-            curl -fsS -o /dev/null "http://127.0.0.1:8080$route"
+            test "$(curl -sS -o /dev/null -w '%{http_code}' "http://127.0.0.1:8080$route")" = 200
           done
           for route in /missing-test-page /api/server.js /Dockerfile /.git/config /herramientas/build.mjs /versiones-viejas/index.html; do
             test "$(curl -s -o /dev/null -w '%{http_code}' "http://127.0.0.1:8080$route")" = 404
