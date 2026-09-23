@@ -48,3 +48,8 @@ hero-capcut-ORIGINAL-14mb.mp4
 # JPG sustituidos por WebP (solo se conservan los de og:image/favicon)
 web-*.jpg
 ai-chat-bg.jpg
+
+# Historial local; no publicar copias antiguas del sitio.
+versiones-viejas/
+
+!ai-avatar.png

@@ -1,0 +1,41 @@
+name: Website checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          package-manager-cache: false
+      - run: npm --prefix herramientas ci
+      - run: npm --prefix herramientas run build
+      - run: npm --prefix herramientas test
+      - name: Verify generated pages are committed
+        run: git diff --exit-code -- index.html agente-whatsapp/index.html en/index.html en/agente-whatsapp/index.html llms.txt
+      - name: Build and smoke-test production container
+        run: |
+          docker build -t genesis-web-check .
+          docker run -d --name genesis-web-check -p 127.0.0.1:8080:80 -e ANTHROPIC_API_KEY=ci-placeholder-not-a-real-key genesis-web-check
+          trap 'docker logs genesis-web-check; docker rm -f genesis-web-check' EXIT
+          for attempt in $(seq 1 20); do
+            if curl -fsS http://127.0.0.1:8080/api/health; then break; fi
+            sleep 1
+          done
+          curl -fsS http://127.0.0.1:8080/api/health
+          for route in / /en/ /agente-whatsapp/ /en/agente-whatsapp/ /site.css /site.js /ai-avatar.png /robots.txt /sitemap.xml /llms.txt; do
+            curl -fsS -o /dev/null "http://127.0.0.1:8080$route"
+          done
+          for route in /missing-test-page /api/server.js /Dockerfile /.git/config /herramientas/build.mjs /versiones-viejas/index.html; do
+            test "$(curl -s -o /dev/null -w '%{http_code}' "http://127.0.0.1:8080$route")" = 404
+          done
+          test "$(curl -s -o /dev/null -w '%{http_code}' -H 'Host: www.genesisnex.com' http://127.0.0.1:8080/)" = 301
+          test "$(curl -s -o /dev/null -w '%{http_code}' -H 'Content-Type: application/json' -d '{}' http://127.0.0.1:8080/api/chat)" = 400
