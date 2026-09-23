@@ -279,8 +279,7 @@ h3{font-size:1.16rem;letter-spacing:-.015em}
 }
 .hero-bg .hero-video{opacity:0;transition:opacity .8s ease}
 .hero-bg .hero-video.is-on{opacity:1}
-/* Sin capa sobre el video (pedido de Jorge, ago 2026): los videos se ven 100% limpios.
-   La legibilidad del texto la dan los text-shadow, nunca un scrim. */
+/* Contraste del hero mediante degradado suave y sombra de texto en site.css. */
 .hero .container{z-index:1}
 .hero-content{max-width:660px}
 .hero-badge{
@@ -979,7 +978,7 @@ footer .logo{color:#fff}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://genesisnex.com/en/#faq","mainEntity":[{"@type":"Question","name":"How much does a website cost at Genesis Nexa?","acceptedAnswer":{"@type":"Answer","text":"Websites start at approx. $303 USD: Web Business approx. $303 USD, Web AI approx. $394 USD and E-commerce AI approx. $485 USD, all one-time payments with no monthly fees for the design. The most chosen one is Web Business at approx. $303 USD, for its value for money. If your business advertises a single product or promotion, we have the Landing Pro at approx. $182 USD. We help you choose on WhatsApp at +1 (786) 357-0624."}},{"@type":"Question","name":"Do you build AI agents for WhatsApp?","acceptedAnswer":{"@type":"Answer","text":"Yes, in three plans. WhatsApp AI Solo, for one-person businesses: approx. $36 USD per month, no setup fee and 7 days free. WhatsApp AI Business, for teams: approx. $73 USD per month, also with no setup fee and 7 days free. WhatsApp AI Pro, for several branches: approx. $121 USD per month plus approx. $182 USD setup. It answers your customers 24/7 with your real business information and alerts you when someone is ready to buy. It connects with a QR code from your phone, with no Meta business account required."}},{"@type":"Question","name":"How much does it cost to keep a WhatsApp agent running?","acceptedAnswer":{"@type":"Answer","text":"The monthly fee is approx. $36 USD on the Solo plan, $73 USD on Business and $121 USD on Pro, and it already includes the intelligent messages, tweaks to its answers, price, schedule and promotion updates and new training. You do not pay AI usage separately. On Solo and Business you try it free for 7 days with no setup fee, and on the eighth day you pay the month in advance."}},{"@type":"Question","name":"How long does it take to deliver a website?","acceptedAnswer":{"@type":"Answer","text":"Between 3 and 5 business days once you approve the copy and photos. That includes the full design, the Spanish and English versions, connecting your WhatsApp and going live. If the project needs a photo shoot or more sections than usual, we tell you before starting."}},{"@type":"Question","name":"Does the website include an English version?","acceptedAnswer":{"@type":"Answer","text":"Web Business, Web AI and E-commerce AI include Spanish and English versions. For Landing Pro, we confirm scope and languages when preparing your proposal."}},{"@type":"Question","name":"Can I update my website without knowing how to code?","acceptedAnswer":{"@type":"Answer","text":"Web Business, Web AI and E-commerce AI include an admin panel. Before starting, we agree which content you will be able to edit. Landing Pro does not include an admin panel."}},{"@type":"Question","name":"Do you work with businesses outside Cancun?","acceptedAnswer":{"@type":"Answer","text":"Yes. We have clients in Cancun, the Riviera Maya, Campeche and Miami, and we work with businesses across Mexico and the United States. The whole process is remote: we gather information over WhatsApp, review on live links and deliver online. No in-person meetings needed."}},{"@type":"Question","name":"What does a premium website include?","acceptedAnswer":{"@type":"Answer","text":"Web Business includes bilingual design, WhatsApp, an admin panel and a booking engine. Web AI adds a website AI agent; E-commerce AI adds an online store and payments. Web Business, Web AI and E-commerce AI include domain registration and hosting with Genesis Nexa for the first year. If you prefer independent hosting in your own name, you pay for it separately. Domain and hosting renewal with Genesis Nexa costs MXN 2,500 per year from the second year (approximately USD 152). For Landing Pro, ask about domain and hosting scope."}},{"@type":"Question","name":"What does the AI chatbot do?","acceptedAnswer":{"@type":"Answer","text":"It answers questions about prices, hours and services using your business information and helps visitors contact you. It is included in Web AI and E-commerce AI. The WhatsApp agent is a separate service with its own plan. We confirm AI usage and integrations before you hire us."}},{"@type":"Question","name":"Do you run Facebook and Instagram ads?","acceptedAnswer":{"@type":"Answer","text":"Yes, we run Meta campaigns for businesses that already have their website ready. We handle ad creative, audience targeting and the monthly results report. You decide how much you spend on ads and that budget goes directly to Meta. It is quoted separately from the website."}},{"@type":"Question","name":"How much does domain and hosting renewal cost?","acceptedAnswer":{"@type":"Answer","text":"Web Business, Web AI and E-commerce AI include domain registration and hosting with Genesis Nexa for the first year. From the second year, renewal costs MXN 2,500 per year (approximately USD 152). Independent hosting in your own name is paid separately."}}],"inLanguage":"en"}</script>
 
-<link rel="stylesheet" href="/site.css?v=20260923">
+<link rel="stylesheet" href="/site.css?v=20260923b">
 <script src="/site.js?v=20260923" defer=""></script>
 <noscript><style>.reveal{opacity:1!important;transform:none!important}.ai-bar,.chat-launcher,.video-toggle,#contact-form{display:none!important}</style></noscript></head>
 <body><a class="skip-link" href="#contenido" data-es="Saltar al contenido" data-en="Skip to content">Skip to content</a>
@@ -1063,7 +1062,7 @@ footer .logo{color:#fff}
         <span data-es="Quiero mi web" data-en="Get my website">Get my website</span>
       </a>
       <a href="#precios" class="btn btn-ghost" data-es="Ver paquetes" data-en="See packages">See packages</a>
-    </div><a class="hero-work-link" href="#portafolio" data-es="Explorar trabajos reales →" data-en="Explore real client websites →">Explore real client websites →</a><form class="ai-bar" onsubmit="heroAsk(event)">
+    </div><a class="hero-work-link" href="https://genesis-genesis-landing.ttt6ja.easypanel.host/" data-es="Explorar diseños para mi web →" data-en="Explore designs for my website →">Explore designs for my website →</a><form class="ai-bar" onsubmit="heroAsk(event)">
       <span class="ai-bar-icon" aria-hidden="true">
         <img src="/ai-avatar.png" alt="" width="34" height="34" loading="lazy" decoding="async">
       </span>
@@ -1079,6 +1078,15 @@ footer .logo{color:#fff}
       <div><strong>24/7</strong><span data-es="Trabajando por ti" data-en="Working for you">Working for you</span></div>
     </div>
     </div>
+  </div>
+</section><section id="catalogo" class="design-catalog" aria-labelledby="catalog-title">
+  <div class="container design-catalog-layout">
+    <div class="design-catalog-copy">
+      <span class="eyebrow" data-es="Ideas para tu próximo sitio" data-en="Ideas for your next website">Ideas for your next website</span>
+      <h2 id="catalog-title" data-es="Elige el diseño de <span class='accent'>tu web.</span>" data-en="Choose a design for <span class='accent'>your website.</span>">Choose a design for <span class="accent">your website.</span></h2>
+      <p class="section-sub" data-es="Explora nuestros trabajos y diseños disponibles. Elige el que más te guste y lo adaptamos con la identidad, los textos y las imágenes de tu negocio. Seguimos añadiendo nuevas propuestas al catálogo." data-en="Explore our work and available designs. Pick your favorite and we will adapt it with your business branding, copy and images. We keep adding new ideas to the collection.">Explore our work and available designs. Pick your favorite and we will adapt it with your business branding, copy and images. We keep adding new ideas to the collection.</p>
+    </div>
+    <a class="btn btn-primary" href="https://genesis-genesis-landing.ttt6ja.easypanel.host/" data-es="Ver diseños disponibles ↗" data-en="Browse available designs ↗">Browse available designs ↗</a>
   </div>
 </section><section id="portafolio" class="service">
   <div class="container">
